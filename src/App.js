@@ -1,14 +1,24 @@
 import './App.css';
-import { Form } from './components/Form';
+import { Cat } from './components/cat';
+import { QueryClient,QueryClientProvider } from '@tanstack/react-query';
 
 
 
+function App() { 
 
-function App() {
+  
+  const client = new QueryClient({
+    defaultOptions: {
+      queries:{
+        refetchOnWindowFocus:true,
+      }}
+    });
 
   return (
     <div className="App">
-      <Form />
+      <QueryClientProvider client={client}>
+        <Cat/>
+      </QueryClientProvider>
     </div>
 
 )
