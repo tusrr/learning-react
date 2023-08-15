@@ -11,11 +11,12 @@ export enum Country{
 
     India ='India',
     Canada ='Canada',
-    France= 'France'
+    France= 'France',
 
 
 }
 
+//Functions in TypeScript
 // const getAge =(name:string):number =>{
 //     return 29;
 // }
