@@ -1,7 +1,5 @@
 .App {
   text-align: center;
-  justify-content: center;
-  display: flex;
 }
 
 .App-logo {
@@ -38,14 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-button,p{
-  color:red;
-}
-
-form{
-  display: flex;
-   flex-Direction: column;
-   width: 300px;
-}
-
